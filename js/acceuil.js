@@ -31,7 +31,7 @@ $(document).ready(() => {
 
     $.ajax({
       type: "POST",
-      url: "http://localhost:3000/api/v1/clients/search-trajet",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/search-trajet",
       data: JSON.stringify(data),
       contentType: "application/json",
       headers: {
@@ -86,7 +86,7 @@ $(document).ready(() => {
     $.ajax({
       type: "POST",
       data: donnee,
-      url: `http://localhost:3000/api/v1/clients/reserver-trajet/${id}`,
+      url: `https://projet-fin-backend.onrender.com/api/v1/clients/reserver-trajet/${id}`,
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
       },

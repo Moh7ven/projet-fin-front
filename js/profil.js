@@ -51,7 +51,7 @@ $(document).ready(() => {
   const getClientInfos = () => {
     const token = localStorage.getItem("tokenCovoitExpress");
     $.ajax({
-      url: "http://localhost:3000/api/v1/clients/get-client-connected",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/get-client-connected",
       type: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -104,7 +104,7 @@ $(document).ready(() => {
     };
     if (verifyChamp()) {
       $.ajax({
-        url: "http://localhost:3000/api/v1/clients/update-client",
+        url: "https://projet-fin-backend.onrender.com/api/v1/clients/update-client",
         type: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,

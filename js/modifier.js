@@ -39,7 +39,7 @@ $(document).ready(() => {
     let nombrePlace = $("#nombrePlace").val();
 
     $.ajax({
-      url: "http://localhost:3000/api/v1/clients/get-conducteur",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/get-conducteur",
       type: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
@@ -114,7 +114,7 @@ $(document).ready(() => {
       };
 
       $.ajax({
-        url: "http://localhost:3000/api/v1/clients/update-conducteur",
+        url: "https://projet-fin-backend.onrender.com/api/v1/clients/update-conducteur",
         type: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,

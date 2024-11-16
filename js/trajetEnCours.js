@@ -89,7 +89,7 @@ $(document).ready(() => {
 
   window.annulerOption = function (id) {
     $.ajax({
-      url: `http://localhost:3000/api/v1/clients/annuler-trajet-ajouter/${id}`,
+      url: `https://projet-fin-backend.onrender.com/api/v1/clients/annuler-trajet-ajouter/${id}`,
       type: "PUT",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
@@ -108,7 +108,7 @@ $(document).ready(() => {
 
   window.terminerOption = function (id) {
     $.ajax({
-      url: `http://localhost:3000/api/v1/clients/terminer-trajet/${id}`,
+      url: `https://projet-fin-backend.onrender.com/api/v1/clients/terminer-trajet/${id}`,
       type: "PUT",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
@@ -146,7 +146,7 @@ $(document).ready(() => {
 
   window.getClientsReserve = (id) => {
     $.ajax({
-      url: `http://localhost:3000/api/v1/clients/get-client-reserve-my-trajet/${id}`,
+      url: `https://projet-fin-backend.onrender.com/api/v1/clients/get-client-reserve-my-trajet/${id}`,
       type: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,

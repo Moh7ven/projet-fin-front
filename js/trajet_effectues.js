@@ -17,7 +17,7 @@ $(document).ready(() => {
   const getTrajetEffectues = () => {
     $.ajax({
       type: "GET",
-      url: "http://localhost:3000/api/v1/clients/get-trajtes-terminer-by-conducteur",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/get-trajtes-terminer-by-conducteur",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
       },

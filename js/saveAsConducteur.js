@@ -69,7 +69,7 @@ $(document).ready(() => {
 
       console.log(data);
       $.ajax({
-        url: "http://localhost:3000/api/v1/clients/save-as-conducteur",
+        url: "https://projet-fin-backend.onrender.com/api/v1/clients/save-as-conducteur",
         type: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,

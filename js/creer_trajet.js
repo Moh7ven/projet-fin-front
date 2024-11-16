@@ -72,7 +72,7 @@ $(document).ready(() => {
 
       $.ajax({
         type: "POST",
-        url: "http://localhost:3000/api/v1/clients/add-trajet",
+        url: "https://projet-fin-backend.onrender.com/api/v1/clients/add-trajet",
         data: JSON.stringify(data),
         contentType: "application/json",
         dataType: "json",

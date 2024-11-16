@@ -76,7 +76,7 @@ $(document).ready(() => {
       };
       $.ajax({
         type: "POST",
-        url: "http://localhost:3000/api/v1/clients/add-client",
+        url: "https://projet-fin-backend.onrender.com/api/v1/clients/add-client",
         data: person,
         success: function (data) {
           console.log(data);

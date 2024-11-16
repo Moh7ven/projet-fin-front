@@ -103,7 +103,7 @@ $(document).ready(() => {
 
   const getTrajetTerminer = () => {
     $.ajax({
-      url: "http://localhost:3000/api/v1/clients/termine",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/termine",
       type: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
@@ -151,7 +151,7 @@ $(document).ready(() => {
 
   const getTrajetsAnnuler = () => {
     $.ajax({
-      url: "http://localhost:3000/api/v1/clients/all-trajet-reserver-annuler",
+      url: "https://projet-fin-backend.onrender.com/api/v1/clients/all-trajet-reserver-annuler",
       type: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("tokenCovoitExpress")}`,
